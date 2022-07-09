@@ -58,7 +58,6 @@ header .time {
     background-image: url(../images/menuu.jpg);
     background-size: cover;
     background-attachment: fixed;
-    /* height: 20%; */
     position: relative;
 }
 .menu > div {
@@ -98,5 +97,18 @@ header .time {
     transform:  translate(-40% , -40%);
 }
 /* End Menu */
-
+@media (max-width: 700px) {
+    header li {
+        margin: auto;
+    }
+    .about > .container {
+        width: 100% !important;
+    }
+    .menu > .container {
+        width: 80% !important;
+    }
+    .where > .container {
+        width: 100% !important;
+    }
+}
 
