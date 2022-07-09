@@ -1,0 +1,102 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h2 , h2 {
+    letter-spacing: 2px ;
+    font-weight: 200;
+    width: fit-content;
+}
+.fw-b {
+    font-weight: bold;
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    background-image: url(../images/coffeehouse.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    position: relative;
+}
+header li {
+    width: 25%;
+    transition: 0.3s;
+}
+header li:hover {
+    background-color: white;
+}
+header li:hover a {
+    color: black !important;
+}
+header h1 {
+    font-size: 6em;
+    font-weight: 400;
+    position: absolute;
+    top: 35%;
+    letter-spacing: 10px;
+}
+header address ,
+header .time {
+    position: absolute;
+    bottom: 0;
+}
+header address {
+    right: 5%;
+}
+header .time {
+    left: 5%;
+}
+/* End Header */
+/* Start Menu */
+.menu {
+    background-image: url(../images/menuu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 20%; */
+    position: relative;
+}
+.menu > div {
+    background-color: white;
+    z-index: 4;
+    overflow: hidden;
+}
+.menu .container .container {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%)
+}
+.menu ul {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%)
+}
+.menu .img {
+    position: relative;
+    transition: 0.5s;
+}
+.menu .img::after {
+    content: "Order Now!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0px 2px 5px black;
+    transform: translate(-50% , -50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+}
+.menu .img:hover {
+    filter: grayscale(10);
+}
+.menu .img:hover::after{
+    opacity: 1;
+    transform:  translate(-40% , -40%);
+}
+/* End Menu */
+
+
