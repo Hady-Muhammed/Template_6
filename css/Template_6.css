@@ -69,7 +69,8 @@ header .time {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%)
 }
 .menu ul {
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%)
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    cursor: pointer;
 }
 .menu .img {
     position: relative;
@@ -95,6 +96,10 @@ header .time {
 .menu .img:hover::after{
     opacity: 1;
     transform:  translate(-40% , -40%);
+}
+.active {
+    background-color: black;
+    color: white;
 }
 /* End Menu */
 @media (max-width: 700px) {
