@@ -5,6 +5,7 @@
     -webkit-box-sizing: border-box;
 }
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 h2 , h2 {
@@ -129,4 +130,14 @@ header .time {
         width: 100% !important;
     }
 }
-
+.about img {
+    animation: leftNright 5s infinite alternate;
+}
+@keyframes leftNright {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
